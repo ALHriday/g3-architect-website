@@ -204,6 +204,35 @@ nav a{
     padding: 30px;
 }
 
+.our-sponsor-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    margin: 50px auto;
+}
+.sponsors-text-part{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+}
+.sponsors{
+    width: 100%;
+    padding: 0px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer{
+    background-color: rgb(255, 244, 231);
+    padding: 40px;
+    text-align: center;
+}
 
 
 
