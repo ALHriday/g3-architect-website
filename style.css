@@ -56,6 +56,14 @@ nav ul{
 nav li{
     padding: 12px;
     list-style-type: none;
+    cursor: pointer;
+}
+nav li:hover{
+    background-color: orange;
+    border-radius: 3px;
+}
+nav li:hover > a{
+    color: white;
 }
 nav a{
     font-size: 18px;
@@ -94,14 +102,13 @@ nav a{
     color: white;
     border: none;
 }
-
 .our-feature{
-    width: 80%;
+    width: 90%;
     display: flex;
     margin: 30px auto;
 }
 .feature-images{
-    width: 50%;
+    width: 45%;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
@@ -235,4 +242,191 @@ footer{
 }
 
 
+@media screen and (max-width: 576px){
+    .header{
+        width: 100%;
+    }
+    nav{
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        margin: 20px 0px;
+    }
+    .banner{
+        width: 100%;
+        margin: 20px auto;
+        gap: 20px;
+    }
+    .banner-text-part{
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        justify-content: center;
+        align-items: center;
+    }
+    .banner-text-part h1{
+        font-size: 40px;
+        font-weight: 600;
+    }
+    .btn{
+        width: 140px;
+        height: 45px;
+        border-radius: 8px;
+        background: rgb(255, 144, 14);
+        color: white;
+        border: none;
+    }
+    .text-lg{
+        font-size: 35px;
+        font-weight: 600;
+    }
+    .text-size{
+        font-size: 30px;
+    }
+    .our-feature{
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 20px;
+    } 
+    .feature-cotainer{
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+    }
+    .feature-cotainer-text-part{
+        width: 100%;
+        height: auto;
+    }
+    .feature-cotainer-img{
+        width: 100%;
+        height: auto;
+        padding: 20px;
+    }
+    .relative-btn{
+        position: absolute;
+        bottom: 0%;
+        left: 0%;
+    }
+    .sponsors-text-part{
+        padding: 20px;
+    }
+    .sponsors{
+        width: 100%;
+        height: auto;
+        padding: 0px 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+    }
+    .feature-images{
+        width: 80%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+    .feature-text-part{
+        width: 90%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 30px;
+        padding-left: 0px;
+    }
+    .somefacts-cards-part{
+        width: 100%;
+        height: auto;
+        display: grid;
+        padding: 20px;
+        text-align: center;
+        gap: 10px;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+@media screen and (min-width: 576px) and (max-width: 960px) {
+    .our-feature{
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 20px;
+    }
+    .feature-cotainer{
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+    }
+    .feature-cotainer-text-part{
+        width: 100%;
+        height: auto;
+    }
+    .feature-cotainer-img{
+        width: 100%;
+        height: auto;
+        padding: 20px;
+    }
+    .relative-btn{
+        position: absolute;
+        bottom: 0%;
+        left: 0%;
+    }
+    .sponsors{
+        width: 100%;
+        height: auto;
+        padding: 0px 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+    }
+    .feature-images{
+        width: 80%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+    .feature-text-part{
+        width: 90%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 30px;
+        padding-left: 0px;
+    }
+    .somefacts-cards-part{
+        height: auto;
+        display: grid;
+        gap: 20px;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+@media screen and (min-width: 960px) and (max-width: 1440px) {
+    .feature-cotainer{
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+    }
+    .feature-cotainer-text-part{
+        width: 80%;
+        height: auto;
+        padding: 30px;
+        margin: auto;
+    }
+    .feature-cotainer-img{
+        width: 80%;
+        height: auto;
+        margin: auto;
+    }
+}
 
